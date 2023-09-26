@@ -1,0 +1,13 @@
+.avatar {
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px; 
+  padding-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .avatar {
+      max-width: 300px; 
+  }
+}
