@@ -1,4 +1,4 @@
-import { FaLinkedin, FaGithub, FaWhatsapp } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaWhatsapp, FaInstagram } from 'react-icons/fa';
 import "../stylings/SocialIcons.css";
 
 const SocialLinks = () => {
@@ -12,6 +12,9 @@ const SocialLinks = () => {
       </a>
       <a href="https://wa.me/your-whatsapp-number" target="_blank" rel="noopener noreferrer">
         <FaWhatsapp className="social-icon whatsapp" />
+      </a>
+      <a href="https://instagram" target="_blank" rel="noopener noreferrer">
+        <FaInstagram className="social-icon instagram" />
       </a>
     </div>
   );
