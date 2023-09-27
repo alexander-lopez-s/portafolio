@@ -1,26 +1,41 @@
 .social-links {
-    display: flex;
-    justify-content: center; 
-    background: linear-gradient(to bottom, #cfd9df, #e2ebf0);
-    border-radius: 10px;
-    margin-top: 30px;
-    padding: 5px;
-  }
-  
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to bottom, #cfd9df, #e2ebf0);
+  border-radius: 10px;
+  margin-top: 30px;
+  padding: 5px;
+}
+
+.social-icon {
+  font-size: 30px;
+  margin: 10px;
+  transition: transform 0.3s; 
+}
+
+.linkedin {
+  color: #0077B5;
+}
+
+.github {
+  color: #333;
+}
+
+.whatsapp {
+  color: #25D366;
+}
+
+/* Media query for wider screens */
+@media screen and (min-width: 768px) {
   .social-icon {
-    font-size: 30px; 
-    margin: 10px; 
+    font-size: 40px; 
   }
-  
-  .linkedin {
-    color: #0077B5;
+
+  .social-links {
+    background: transparent; 
   }
-  
-  .github {
-    color: #333;
-  }
-  
-  .whatsapp {
-    color: #25D366;
-  }
-  
+}
+
+.social-icon:hover {
+  transform: scale(1.2); 
+}

@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     padding: 20px;
-    background-image: url('../assets/animated-background.gif');
+    background-image: url('../assets/animated-background.svg');
     background-size: contain;
     width: 100%;
     min-height : 100vh;
@@ -10,18 +10,19 @@
   
   .home-container h1 {
     font-size: 40px;
-    color: #3a3939;
+    color: #11ec65;
     justify-content: center;
   }
   
   .home-container p {
     text-align: justify;
-    line-height: 1.5;
+    line-height: 1.5; 
+    color: rgb(246, 246, 252);
   }
   
   .emphasize-career {
     font-weight: bold;
-    color: #0861c0; 
+    color: #4b9df5; 
   }
   
   .emphasize-name {
@@ -48,3 +49,32 @@
     width: 100%;
   }
 }
+
+
+
+/* Media query for larger screens */
+@media screen and (min-width: 768px) {
+  .home-container {
+    padding: 40px;
+  }
+
+  .home-container h1 {
+    font-size: 40px;
+  }
+
+  .home-container p {
+    font-size: 25px; 
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: left;
+    color: white;
+  }
+
+  .avatar-text-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
