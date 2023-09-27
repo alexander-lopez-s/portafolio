@@ -11,3 +11,18 @@
       max-width: 300px; 
   }
 }
+
+.fade-slide-animation {
+  animation: fadeSlide 2s ease-in-out;
+}
+
+@keyframes fadeSlide {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
