@@ -3,6 +3,8 @@
     flex-direction: column;
     padding: 20px;
     background: linear-gradient(to bottom, #f7f7f7, #e0e0e0);
+    background-image: url('../assets/animated-background.gif');
+    background-size: contain;
   }
   
   .home-container h1 {
