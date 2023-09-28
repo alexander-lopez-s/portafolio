@@ -8,9 +8,9 @@
   background-image: url('https://cdn.dribbble.com/userupload/7665511/file/original-4fbcb93efa222297cca311e5679db266.gif');
   background-size: cover;
   width: 100%;
-  min-height : 100vh;
+  min-height: 100vh;
   text-align: center;
-  filter: brightness(120%); 
+  filter: brightness(100%);
 }
 
 .about-title {
@@ -25,13 +25,14 @@
 .about-image {
   max-width: 100%;
   height: 300px;
-  margin-right: 20px;
   border-radius: 5px;
+  text-align: center;
 }
 
 .description {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   padding: 10px;
+  border-radius: 10px;
 }
 
 .description p {
@@ -41,14 +42,45 @@
 }
 
 
-@media (max-width: 768px) {
-  .about-item {
+/* For larger screens */
+@media (min-width: 769px) {
+  .about-container {
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .about-image {
-    margin-right: 0;
-    margin-bottom: 20px;
+  .about-title {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
   }
-}
+
+  .about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .about-gallery {
+    max-width: 300px;
+    margin-right: 40px;
+  }
+
+  .about-image {
+    width: 300px; 
+    height: 390px;
+  }
+
+  .description {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+    padding: 50px;
+  }
+
+  .description p {
+    font-size: 18px;
+  }
+  }
