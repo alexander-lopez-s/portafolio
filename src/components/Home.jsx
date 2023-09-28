@@ -13,7 +13,7 @@ const Home = () => {
 
   return (
     <div className="home-container">
-      <h1>Hi, I am <span className="emphasize-name">Chris!</span></h1>
+      <h1>Hi, I am <span className="emphasize-name">Alex!</span></h1>
       <div className="avatar-text-wrapper">
       <img src={avatar} alt="my-avatar-picture" className="avatar" />
       <p>

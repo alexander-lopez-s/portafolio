@@ -9,15 +9,18 @@
   width: 100%;
   min-height: 100vh;
   text-align: center;
-  filter: brightness(100%);
+  filter: brightness(100%);  
 }
 
 .about-title {
   font-size: 24px;
   font-weight: bold;
-  color: rgb(92, 43, 226);
+  background: linear-gradient(45deg, rgb(0, 0, 255), rgb(0, 128, 128));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin-bottom: 10px;
 }
+
 
 .about-item {
   margin-top: 20px;
@@ -40,13 +43,44 @@
 .description p {
   font-size: 16px;
   margin-bottom: 10px;
+  text-align: left;
 }
+
+.custom-style1 {
+  font-weight: bold;
+  font-size: 16px;
+  color: #FF0000;
+}
+
+.custom-style2 {
+  font-style: italic;
+  font-size: 16px;
+  color: #176b17;
+}
+
+.custom-style3 {
+  font-size: 16px;
+  color: #0000FF;
+}
+
+.custom-style4 {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 16px;
+  color: #966407;
+}
+
 
 @media (min-width: 769px) {
   .about-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-size:cover;
+  }
+
+  .description p {
+    font-size: 20px !important;
   }
 
   .about-title {
@@ -81,12 +115,38 @@
     flex: 1;
     padding: 20px;
     text-align: left;
-    padding: 50px;
   }
 
+
   .description p {
-    font-size: 18px;
+    font-size: 16px;
+    margin-bottom: 10px;
   }
+  
+  .custom-style1 {
+    font-weight: bold;
+    font-size: 24px;
+    color: #FF0000;
+  }
+  
+  .custom-style2 {
+    font-style: italic;
+    font-size: 24px;
+    color: #176b17;
+  }
+  
+  .custom-style3 {
+    font-size: 24px;
+    color: #0000FF;
+  }
+  
+  .custom-style4 {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 24px;
+    color: #966407;
+  }
+  
 }
 
 .hobbies-list {
@@ -99,7 +159,8 @@
 
 .hobbies-text {
   margin-top: 10px;
-  font-size: 24px !important;
+  font-size: 18px !important;
+  color: #0000FF;
 }
 
 .hobbies-list li {
@@ -113,6 +174,7 @@
   border-radius: 10px;
   transition: transform 0.2s, background-color 0.2s;
   cursor: pointer;
+
 }
 
 .hobbies-list li:hover {

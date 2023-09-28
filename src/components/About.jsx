@@ -1,6 +1,15 @@
 import { useState, useEffect } from 'react';
 import { FcManager, FcMindMap, FcShop } from 'react-icons/fc';
-import { FaGlobe, FaMusic, FaCamera, FaLanguage, FaDumbbell } from 'react-icons/fa';
+import {
+  FaGlobe,
+  FaMusic,
+  FaCamera,
+  FaLanguage,
+  FaDumbbell,
+  FaHiking,
+  FaChess,
+} from 'react-icons/fa';
+import { GiCook } from 'react-icons/gi';
 import '../stylings/About.css';
 import image1 from '../assets/about1.jpg';
 import image2 from '../assets/about2.png';
@@ -36,19 +45,58 @@ const About = () => {
         </div>
         <div className="description">
           <p className="motto">
-            I am a relentless traveler with an unwaveringly positive outlook on life. My persistence knows no bounds as I take challenges with enthusiasm and determination.
+            I am a <span className="custom-style1">relentless traveler</span> with an unwaveringly{' '}
+            <span className="custom-style2">positive</span> outlook on life. My{' '}
+            <span className="custom-style3">persistency</span> knows no bounds as I take challenges with{' '}
+            <span className="custom-style4">enthusiasm</span> and determination.
           </p>
-          <p><strong><FcManager /> Name:</strong> {name}</p>
-          <p><strong><FcMindMap /> Nationality:</strong> {nationality}</p>
-          <p><strong><FcShop /> Address:</strong> {address}</p>
+          <p>
+            <strong>
+              <FcManager />&nbsp;Name:
+            </strong>{' '}
+            {name}
+          </p>
+          <p>
+            <strong>
+              <FcMindMap />&nbsp;Nationality:
+            </strong>{' '}
+            {nationality}
+          </p>
+          <p>
+            <strong>
+              <FcShop />&nbsp;Address:
+            </strong>{' '}
+            {address}
+          </p>
           <div className="about-item">
-            <p className='hobbies-text'><strong>Hobbies:</strong></p>
+            <p className="hobbies-text">
+              <strong>Hobbies:</strong>
+            </p>
             <ul className="hobbies-list">
-              <li><FaGlobe />  Traveling</li>
-              <li><FaMusic /> Piano</li>
-              <li><FaCamera />  Photography</li>
-              <li><FaLanguage />  Swimming</li>
-              <li><FaDumbbell />  Fitness</li>
+              <li>
+                <FaGlobe />&nbsp;Traveling
+              </li>
+              <li>
+                <FaMusic />&nbsp;Piano
+              </li>
+              <li>
+                <FaCamera />&nbsp;Photography
+              </li>
+              <li>
+                <FaLanguage />&nbsp;Swimming
+              </li>
+              <li>
+                <FaHiking />&nbsp;Hiking
+              </li>
+              <li>
+                <GiCook />&nbsp;Cooking
+              </li>
+              <li>
+                <FaDumbbell />&nbsp;Fitness
+              </li>
+              <li>
+                <FaChess />&nbsp;Chess
+              </li>
             </ul>
           </div>
         </div>
