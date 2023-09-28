@@ -1,11 +1,12 @@
 .social-links {
   display: flex;
   justify-content: center;
-  background: linear-gradient(to bottom, #cfd9df, #e2ebf0);
+  background: linear-gradient(to bottom, rgba(207, 217, 223, 0.2), rgba(226, 235, 240, 0.2)); /* More transparent background color */
   border-radius: 10px;
-  margin-top: 30px;
+  margin-top: px;
   padding: 5px;
 }
+
 
 .social-icon {
   font-size: 30px;

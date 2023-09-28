@@ -2,27 +2,29 @@
     display: flex;
     flex-direction: column;
     padding: 20px;
-    background-image: url('../assets/animated-background.svg');
-    background-size: contain;
+    background-image: url('https://cdn.dribbble.com/userupload/7665511/file/original-4fbcb93efa222297cca311e5679db266.gif');
+    background-size: cover;
     width: 100%;
     min-height : 100vh;
+    filter: brightness(120%); 
   }
   
   .home-container h1 {
     font-size: 40px;
-    color: #11ec65;
+    color: #143f24;
     justify-content: center;
   }
   
   .home-container p {
     text-align: justify;
     line-height: 1.5; 
-    color: rgb(246, 246, 252);
+    margin-bottom: 10px;
+    font-weight: bolder;
   }
   
   .emphasize-career {
     font-weight: bold;
-    color: #4b9df5; 
+    color: #0971e0; 
   }
   
   .emphasize-name {
@@ -56,7 +58,9 @@
 @media screen and (min-width: 768px) {
   .home-container {
     padding: 40px;
+ 
   }
+
 
   .home-container h1 {
     font-size: 40px;
@@ -67,11 +71,11 @@
     margin-left: 50px;
     margin-right: 50px;
     text-align: left;
-    color: white;
   }
 
   .avatar-text-wrapper {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
   }
