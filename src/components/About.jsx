@@ -1,10 +1,14 @@
 import { useState, useEffect } from 'react';
 import { FcManager, FcMindMap, FcShop } from 'react-icons/fc';
+import { FaGlobe, FaMusic, FaCamera, FaLanguage, FaDumbbell } from 'react-icons/fa';
 import '../stylings/About.css';
+import image1 from '../assets/about1.jpg';
 import image2 from '../assets/about2.png';
+import image3 from '../assets/about3.png';
 import image4 from '../assets/about4.png';
+import image5 from '../assets/about5.png';
 
-const images = [image2, image4];
+const images = [image1, image2, image3, image4, image5];
 
 const About = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -37,6 +41,16 @@ const About = () => {
           <p><strong><FcManager /> Name:</strong> {name}</p>
           <p><strong><FcMindMap /> Nationality:</strong> {nationality}</p>
           <p><strong><FcShop /> Address:</strong> {address}</p>
+          <div className="about-item">
+            <p className='hobbies-text'><strong>Hobbies:</strong></p>
+            <ul className="hobbies-list">
+              <li><FaGlobe />  Traveling</li>
+              <li><FaMusic /> Piano</li>
+              <li><FaCamera />  Photography</li>
+              <li><FaLanguage />  Swimming</li>
+              <li><FaDumbbell />  Fitness</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

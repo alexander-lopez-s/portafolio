@@ -1,11 +1,10 @@
 .about-container {
-  background-color: #f5f5f5;
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url('https://cdn.dribbble.com/userupload/7665511/file/original-4fbcb93efa222297cca311e5679db266.gif');
+  background-image: url('https://www.brightcarbon.com/wp/wp-content/uploads/2023/03/Waves-and-boat.gif');
   background-size: cover;
   width: 100%;
   min-height: 100vh;
@@ -16,6 +15,8 @@
 .about-title {
   font-size: 24px;
   font-weight: bold;
+  color: rgb(92, 43, 226);
+  margin-bottom: 10px;
 }
 
 .about-item {
@@ -27,6 +28,7 @@
   height: 300px;
   border-radius: 5px;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .description {
@@ -38,11 +40,8 @@
 .description p {
   font-size: 16px;
   margin-bottom: 10px;
-  text-align: left;
 }
 
-
-/* For larger screens */
 @media (min-width: 769px) {
   .about-container {
     display: flex;
@@ -69,8 +68,13 @@
   }
 
   .about-image {
-    width: 300px; 
+    width: 300px;
     height: 390px;
+  }
+
+  .motto {
+    font-size: 25px !important;
+    padding-bottom: 10px;
   }
 
   .description {
@@ -83,4 +87,36 @@
   .description p {
     font-size: 18px;
   }
-  }
+}
+
+.hobbies-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hobbies-text {
+  margin-top: 10px;
+  font-size: 24px !important;
+}
+
+.hobbies-list li {
+  margin: 10px;
+  font-size: 1rem;
+  color: rgb(8, 8, 8);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #34db5e;
+  border-radius: 10px;
+  transition: transform 0.2s, background-color 0.2s;
+  cursor: pointer;
+}
+
+.hobbies-list li:hover {
+  transform: scale(1.05);
+  background-color: #0f0e0e;
+  color: white;
+}
