@@ -45,6 +45,8 @@ const About = () => {
         </div>
         <div className="description">
           <p className="motto">
+            <p className="hobbies-text">Who am I?</p>
+
             I am a <span className="custom-style1">relentless traveler</span> with an unwaveringly{' '}
             <span className="custom-style2">positive</span> outlook on life. My{' '}
             <span className="custom-style3">persistency</span> knows no bounds as I take challenges with{' '}
@@ -83,6 +85,9 @@ const About = () => {
                 <FaCamera />&nbsp;Photography
               </li>
               <li>
+                <FaDumbbell />&nbsp;Fitness
+              </li>
+              <li>
                 <FaLanguage />&nbsp;Swimming
               </li>
               <li>
@@ -91,9 +96,7 @@ const About = () => {
               <li>
                 <GiCook />&nbsp;Cooking
               </li>
-              <li>
-                <FaDumbbell />&nbsp;Fitness
-              </li>
+
               <li>
                 <FaChess />&nbsp;Chess
               </li>
