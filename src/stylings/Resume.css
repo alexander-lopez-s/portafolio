@@ -1,20 +1,32 @@
 .resume-container {
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    background-image: url('../assets/animatedBackground2.gif');
+    background-size: auto;
+    width: 100%;
+    min-height: 100vh;
+    text-align: left;
+    filter: brightness(100%);
 }
 
-.skills,
-.education,
-.languages {
-    margin: 0;
+.row-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.row-container > div {
+    margin-bottom: 20px;
 }
 
 h1 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: #0a633e; 
+    color: #0a633e;
 }
+
+
 
 .skill,
 .language {
@@ -39,7 +51,7 @@ h1 {
 }
 
 .education .timeline {
-    margin-top: 20px;
+    margin-top: 10px;
     border-left: 2px solid #0077b6;
     padding-left: 20px;
 }
@@ -118,19 +130,68 @@ h1 {
     background-color: #ff6b6b;
 }
 
-@media (min-width: 768px) {
-    .resume-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin-top: 50px
-    }
 
-    .skills,
-    .education,
-    .languages {
+
+
+.work-experience {
+    margin-top: 20px;
+    text-align: left;
+    align-items: center;
+  }
+  
+  .work-experience h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+
+  .job1,
+  .job2,
+  .job3 {
+    padding: 5px;
+  }
+  
+  .job1,
+  .job2,
+  .job3 p {
+    margin: 0;
+  }
+  
+  .job1 p:first-child,
+  .job2 p:first-child,
+  .job3 p:first-child {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+
+  .job1 p:nth-child(2),
+  .job2 p:nth-child(2),
+  .job3 p:nth-child(2) {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .job1 p:nth-child(3),
+  .job2 p:nth-child(3),
+  .job3 p:nth-child(3) {
+    font-size: 16px;
+  }
+  
+
+@media (min-width: 768px) {
+
+    
+    .row-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .row-container > div {
         flex: 1;
         margin: 0 20px;
+        margin-top: 20px;
     }
 
     h1 {
@@ -149,7 +210,7 @@ h1 {
     }
 
     .education .timeline {
-        margin-top: 30px;
+        margin-top: 20px;
     }
 
     .education .date {
@@ -167,3 +228,4 @@ h1 {
         font-size: 16px;
     }
 }
+

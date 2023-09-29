@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import { FcManager, FcMindMap, FcShop } from 'react-icons/fc';
-import {FaGlobe,FaMusic,FaCamera,FaLanguage,FaDumbbell,FaHiking,FaChess,} from 'react-icons/fa';
+import { FaGlobe, FaMusic, FaCamera, FaLanguage, FaDumbbell, FaHiking, FaChess } from 'react-icons/fa';
 import { GiCook } from 'react-icons/gi';
+import { FcPhone } from 'react-icons/fc';
 import '../stylings/About.css';
 import image1 from '../assets/about1.jpg';
 import image2 from '../assets/about2.png';
@@ -25,6 +26,25 @@ const About = () => {
   const name = "Alexander Lopez";
   const nationality = "Mexican";
   const address = "Lange Molenstraat 3, 8200 Sint-Andries, Belgium";
+  const phoneNumber = "(+32)0491110699";
+
+  const hobbies = [
+    { icon: <FaGlobe />, text: "Traveling" },
+    { icon: <FaMusic />, text: "Piano" },
+    { icon: <FaDumbbell />, text: "Fitness" },
+    { icon: <FaHiking />, text: "Hiking" },
+    { icon: <GiCook />, text: "Food" },
+    { icon: <FaCamera />, text: "Photography" },
+    { icon: <FaLanguage />, text: "Swimming" },
+    { icon: <FaChess />, text: "Chess" },
+  ];
+
+  const generateRandomColor = () => {
+    const hue = Math.floor(Math.random() * 360); 
+    const saturation = Math.floor(Math.random() * 20) + 80; 
+    const lightness = Math.floor(Math.random() * 20) + 80; 
+    return `hsl(${hue}, ${saturation}%, ${lightness}%)`;
+  };
 
   return (
     <div className="about-container">
@@ -37,61 +57,51 @@ const About = () => {
         </div>
         <div className="description">
           <p className="motto">
-            <p className="hobbies-text">Who am I?</p>
-
+            <div className='presentation-card'>
+              <p>
+                <strong>
+                  <FcManager />&nbsp;Name:
+                </strong>{' '}
+                {name}
+              </p>
+              <p>
+                <strong>
+                  <FcMindMap />&nbsp;Nationality:
+                </strong>{' '}
+                {nationality}
+              </p>
+              <p>
+                <strong>
+                  <FcShop />&nbsp;Address:
+                </strong>{' '}
+                {address}
+              </p>
+              <p>
+                <strong>
+                  <FcPhone />&nbsp;Number:
+                </strong>{' '}
+                {phoneNumber}
+              </p>
+            </div>
             I am a <span className="custom-style1">relentless traveler</span> with an unwaveringly{' '}
             <span className="custom-style2">positive</span> outlook on life. My{' '}
             <span className="custom-style3">persistency</span> knows no bounds as I take challenges with{' '}
             <span className="custom-style4">enthusiasm</span> and determination.
           </p>
-          <p>
-            <strong>
-              <FcManager />&nbsp;Name:
-            </strong>{' '}
-            {name}
-          </p>
-          <p>
-            <strong>
-              <FcMindMap />&nbsp;Nationality:
-            </strong>{' '}
-            {nationality}
-          </p>
-          <p>
-            <strong>
-              <FcShop />&nbsp;Address:
-            </strong>{' '}
-            {address}
-          </p>
+
           <div className="about-item">
             <p className="hobbies-text">
               <strong>Hobbies and interests:</strong>
             </p>
             <ul className="hobbies-list">
-              <li>
-                <FaGlobe />&nbsp;Traveling
-              </li>
-              <li>
-                <FaMusic />&nbsp;Piano
-              </li>
-              <li>
-                <FaCamera />&nbsp;Photography
-              </li>
-              <li>
-                <FaDumbbell />&nbsp;Fitness
-              </li>
-              <li>
-                <FaLanguage />&nbsp;Swimming
-              </li>
-              <li>
-                <FaHiking />&nbsp;Hiking
-              </li>
-              <li>
-                <GiCook />&nbsp;Food
-              </li>
-
-              <li>
-                <FaChess />&nbsp;Chess
-              </li>
+              {hobbies.map((hobby, index) => (
+                <li
+                  key={index}
+                  style={{ backgroundColor: generateRandomColor() }}
+                >
+                  {hobby.icon}&nbsp;{hobby.text}
+                </li>
+              ))}
             </ul>
           </div>
         </div>

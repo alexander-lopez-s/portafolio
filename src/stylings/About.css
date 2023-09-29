@@ -4,8 +4,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url('https://www.brightcarbon.com/wp/wp-content/uploads/2023/03/Waves-and-boat.gif');
-  background-size: cover;
+  background-image: url('../assets/animatedBackground2.gif');
+  background-size: auto;
   width: 100%;
   min-height: 100vh;
   text-align: center;
@@ -21,9 +21,15 @@
   margin-bottom: 10px;
 }
 
-
 .about-item {
   margin-top: 20px;
+}
+
+.presentation-card {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
 }
 
 .about-image {
@@ -47,13 +53,11 @@
 }
 
 .custom-style1 {
-  font-weight: bold;
   font-size: 16px;
   color: #FF0000;
 }
 
 .custom-style2 {
-  font-style: italic;
   font-size: 16px;
   color: #176b17;
 }
@@ -64,19 +68,16 @@
 }
 
 .custom-style4 {
-  font-weight: bold;
-  font-style: italic;
   font-size: 16px;
   color: #966407;
 }
-
 
 @media (min-width: 769px) {
   .about-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-size:cover;
+    background-size: cover;
   }
 
   .description p {
@@ -117,36 +118,26 @@
     text-align: left;
   }
 
-
   .description p {
     font-size: 16px;
     margin-bottom: 10px;
   }
-  
+
   .custom-style1 {
-    font-weight: bold;
     font-size: 24px;
-    color: #FF0000;
   }
-  
+
   .custom-style2 {
-    font-style: italic;
     font-size: 24px;
-    color: #176b17;
   }
-  
+
   .custom-style3 {
     font-size: 24px;
-    color: #0000FF;
   }
-  
+
   .custom-style4 {
-    font-weight: bold;
-    font-style: italic;
     font-size: 24px;
-    color: #966407;
   }
-  
 }
 
 .hobbies-list {
@@ -154,13 +145,7 @@
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-}
-
-.hobbies-text {
-  margin-top: 10px;
-  font-size: 18px !important;
-  color: #0000FF;
+  justify-content: left;
 }
 
 .hobbies-list li {
@@ -174,7 +159,6 @@
   border-radius: 10px;
   transition: transform 0.2s, background-color 0.2s;
   cursor: pointer;
-
 }
 
 .hobbies-list li:hover {
