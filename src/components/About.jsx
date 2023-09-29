@@ -1,14 +1,6 @@
 import { useState, useEffect } from 'react';
 import { FcManager, FcMindMap, FcShop } from 'react-icons/fc';
-import {
-  FaGlobe,
-  FaMusic,
-  FaCamera,
-  FaLanguage,
-  FaDumbbell,
-  FaHiking,
-  FaChess,
-} from 'react-icons/fa';
+import {FaGlobe,FaMusic,FaCamera,FaLanguage,FaDumbbell,FaHiking,FaChess,} from 'react-icons/fa';
 import { GiCook } from 'react-icons/gi';
 import '../stylings/About.css';
 import image1 from '../assets/about1.jpg';
@@ -72,7 +64,7 @@ const About = () => {
           </p>
           <div className="about-item">
             <p className="hobbies-text">
-              <strong>Hobbies:</strong>
+              <strong>Hobbies and interests:</strong>
             </p>
             <ul className="hobbies-list">
               <li>
@@ -94,7 +86,7 @@ const About = () => {
                 <FaHiking />&nbsp;Hiking
               </li>
               <li>
-                <GiCook />&nbsp;Cooking
+                <GiCook />&nbsp;Food
               </li>
 
               <li>
